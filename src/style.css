@@ -1,0 +1,308 @@
+/*Geral*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600&display=swap');
+
+:root{
+    --fundo:#faf6ed;
+    --colorPrimary:#222;
+    --colorSecondary: #fff;
+    --backGround1:#5c45a9;
+    --backGround2:#3b315a;
+    --backGround3:#333;
+}
+
+body, h1, h2, ul, ul, li, p, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+  
+ul {
+    list-style: none;
+}
+
+ul{
+    list-style: none;   
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.body-container {
+    background: var(--fundo);
+    color: var(--colorPrimary);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Header*/
+
+header{
+    width: 100%;
+    background: var(--backGround1);
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header a{
+    color: var(--colorSecondary);
+}
+
+header .menu-logo{
+    margin: 0px 10px;
+}
+
+header .logo{
+    width: 200px;
+    height: auto;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header li a{
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+header li a:hover{
+    color: var(--colorPrimary);
+}
+
+header li a::after{
+    content: "";
+    background: var(--colorPrimary);
+    width: 0px;
+    position: absolute;
+    height: 3px;
+    right:0px;
+    bottom: 8px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+header li a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+/*Banner*/
+.banner_img{
+    background-size: cover;
+    background-position: center;
+    display: block;
+    max-width: 100%;
+    height: 420px;
+    background-repeat: no-repeat;
+    filter: grayscale(90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_img h1{
+    color: var(--colorSecondary);
+    text-align: center;
+    font-size: 2.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner_img h1 q{
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*Criação*/
+.criacao{
+    background: var(--backGround1);
+    padding: 20px 0px;
+}
+
+.criacao_conteudo{
+    padding: 30px 0px;
+}
+
+.criacao_conteudo .item{
+    flex: 1;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.criacao_conteudo h2{
+    color:  var(--colorSecondary);
+    text-align: center;
+    transition: ease 0.3s;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.criacao_conteudo p{
+    color:  var(--colorSecondary);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1em;
+}
+
+.img-circle{
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    background:  var(--colorSecondary);
+    border-radius: 95px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.img-circle img{
+    margin: 0px auto;
+    height: 50px;
+}
+
+/*Sobre*/
+
+.sobre{
+    background-size: cover;
+    background-position: center;
+    display: block;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.sobre .opacityBlack{
+    height: 100%;
+    background: rgba(0,0,0,.55);
+    padding-top: 65px;
+}
+
+.sobre_conteudo h2{
+    width: 100%;
+    color:  var(--colorSecondary);
+    text-shadow: 2px 2px #000;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.sobre .sobrePerfil {
+    max-width: 220px;
+}
+
+.sobre .sobrePerfil img{
+    border-radius: 50%;
+}
+
+.assuntoSobre{
+    max-width: calc(100% - 220px);
+    padding-top: 37px;
+}
+
+.assuntoSobre .balao{
+    background-color:  var(--colorSecondary);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-left: 30px;
+}
+
+.assuntoSobre .balao h3{
+    color: var(--backGround1);
+    font-size: 1.17em;
+    margin-top: 0px;
+}
+
+.assuntoSobre .balao p{
+    margin-block-start: 1em;
+    color: var(--colorPrimary);
+}
+
+/*Contato*/
+.contato{
+    background: var(--colorPrimary);
+}
+
+.contato_conteudo{
+        padding: 50px 0px;
+        display: block;
+}
+
+.contato_conteudo h2{
+    width: 100%;
+    color: var(--colorSecondary);
+    text-shadow: 2px 2px #000;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.contato_conteudo label{
+    display: block;
+    color: var(--colorSecondary);
+}
+.contato_conteudo input{
+    display: block;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom:  20px;
+}
+
+.endereco p{
+    color: var(--colorSecondary);
+}
+
+.formularioContato form, .formularioContato .endereco{
+    flex: 1;
+}
+
+form .textInput{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #5c45a9;
+    border-radius: 0px;
+    color: var(--colorSecondary);
+    padding-left: 10px;
+    font-size: 1.2em;
+}
