@@ -5,7 +5,7 @@ import Sobre from '../Components/Sobre.jsx';
 import Contato from '../Components/Contato.jsx';
 import bannerImg from "../img/banner/bannerHome2.jpg";
 
-const bannerTitle = "Criação e otimização agora o seu site !";
+const bannerTitle = "Criação e otimização do seu site !";
 const bannerDescription = "Seja bem vindo";
 
 const Home = (props) => {
