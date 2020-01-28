@@ -1,3 +1,11 @@
+O projeto FronTeg está sem a pasta node_modules.
+Para fazer algum teste insira a pasta ou jogue o site em um servidor Node.
+
+Install
+npx create-react-app
+npm install react-router-dom
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
