@@ -6,6 +6,7 @@ import tools from "../img/icon/tools.png";
 
 
 const Criacao = () => {
+
     return (
         <section className="criacao">
             <div className="container criacao_conteudo flex">

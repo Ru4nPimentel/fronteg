@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Logo from "../img/LogoB.png";
 
@@ -11,10 +11,9 @@ const Hearder = () => {
                     <a href="/"> <img className="logo" src={Logo} alt="logo"/> </a>
                 </div>
                 <ul>
-                    <li> <a href="#">Home</a> </li>                    
-                    <li> <a href="#">Criação</a> </li>
-                    <li> <a href="#">Sobre</a> </li>
-                    <li> <a href="#">Contato</a> </li>
+                    <li> <Link to="/">Home</Link> </li>                    
+                    <li> <Link to="/produtos">Produtos</Link> </li>                    
+                    <li> <Link to="/contato">Contato</Link> </li>
                 </ul>
             </nav>
         </header>
